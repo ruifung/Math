@@ -523,7 +523,7 @@ namespace CrunchyDuck.Math {
 		private static void MathTextField(InputField field, Rect area) {
 			Color original_col = GUI.color;
 			// Invalid input.
-			if (!Math.DoMath(field.buffer, field))
+			if (!Math.DoMathForField(field.buffer, field))
 				GUI.color = new Color(1, 0, 0, 0.8f);
 			// Valid input.
 			else

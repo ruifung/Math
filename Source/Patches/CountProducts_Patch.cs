@@ -16,7 +16,7 @@ namespace CrunchyDuck.Math {
 			if (!bc.customItemsToCount)
 				return true;
 
-			Math.DoMath(bc.itemsToCount.lastValid, bc.itemsToCount);
+			Math.DoMathForField(bc.itemsToCount.lastValid, bc.itemsToCount);
 			__result = UnityEngine.Mathf.CeilToInt(bc.itemsToCount.CurrentValue);
 			return false;
 		}

@@ -145,7 +145,7 @@ namespace CrunchyDuck.Math {
 			cachedMaps = new Dictionary<Map, CachedMapData>();
 		}
 
-		public static bool DoMath(string equation, InputField field) {
+		public static bool DoMathForField(string equation, InputField field) {
 			float res = 0;
 			if (!DoMath(equation, field.bc, ref res))
 				return false;

@@ -65,10 +65,10 @@ namespace CrunchyDuck.Math {
 		}
 
 		public static void UpdateBill(BillComponent bc) {
-			Math.DoMath(bc.doUntilX.lastValid, bc.doUntilX);
+			Math.DoMathForField(bc.doUntilX.lastValid, bc.doUntilX);
 			//Math.DoMath(item.repeat_count_last_valid, ref item.targetBill.repeatCount, item);
-			Math.DoMath(bc.unpause.lastValid, bc.unpause);
-			Math.DoMath(bc.itemsToCount.lastValid, bc.itemsToCount);
+			Math.DoMathForField(bc.unpause.lastValid, bc.unpause);
+			Math.DoMathForField(bc.itemsToCount.lastValid, bc.itemsToCount);
 		}
 
 		public void RemoveBillComponent(BillComponent bc) {
